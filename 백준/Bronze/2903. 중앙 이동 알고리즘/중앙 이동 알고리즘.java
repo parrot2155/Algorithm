@@ -6,12 +6,12 @@ public class Main {
 		Scanner sc = new Scanner(System.in);
 		
 		int n = sc.nextInt();
-		int sq = 2;
+		int li = 2;      	//첫째항 2
 		
 		for(int i=0;i<n;i++) {
-			sq = (sq+(sq-1));
+			li = (li+(li-1));  //현재항 = 이전항+(이전항-1)
 		}
-		System.out.println((int)Math.pow(sq, 2));
+		System.out.println((int)Math.pow(li, 2));	//제곱해서 출력
 	}
 }
 // 2 2
