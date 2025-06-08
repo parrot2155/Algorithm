@@ -9,7 +9,7 @@ public class Main {
 		int res = 0;
 		
 		for(int i=0;i<str.length();i++) {
-			if(str.charAt(i)=='c') {
+			if(str.charAt(i)=='c') {					//각 찾으려는 문자가 연속되어 있는지 조건문으로 계속 걸러냄
 				if(i<str.length()-1) {
 					if(str.charAt(i+1)=='=') {
 					res++;
