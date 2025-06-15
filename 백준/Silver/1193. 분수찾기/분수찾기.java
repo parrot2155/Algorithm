@@ -7,8 +7,8 @@ public class Main {
 		Scanner sc = new Scanner(System.in);
 		
 		int no = sc.nextInt();
-		int line = 1;		//현재 줄(=현재 줄의 들어있는 숫자 개수)
-		int div =1;  		//나누는 수(=각 라인의 마지막 제일 큰 수)
+		int line = 1;		//현재 줄(or현재 줄의 들어있는 숫자 개수)		(대각선으로 한줄씩 계산합니다.)
+		int div =1;  		//나누는 수(or각 라인의 마지막 제일 큰 수)
 		
 		while(no>div) {
 			line++;
