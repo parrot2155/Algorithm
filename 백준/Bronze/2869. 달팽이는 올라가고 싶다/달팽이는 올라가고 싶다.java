@@ -9,7 +9,7 @@ public class Main {
 		int b = sc.nextInt();
 		int v = sc.nextInt();
 		
-		long res = (v - a) / (a -b);
+		int res = (v - a) / (a -b);
 
 		if ((v - a) % (a - b) == 0) {
 			System.out.println(res + 1);
