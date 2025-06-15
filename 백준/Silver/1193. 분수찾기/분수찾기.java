@@ -8,8 +8,7 @@ public class Main {
 		
 		int no = sc.nextInt();
 		int line = 1;
-		int res = 0;
-		int div =1;
+		int div =1;  		//나누는 수(=각 라인의 마지막 제일 큰 수)
 		
 		while(no>div) {
 			line++;
