@@ -14,12 +14,12 @@ public class Main {
 			arr[i]=sc.nextInt();
 		}
 		
-        for (int i=0; i<arr.length-1;i++) {		// 내림차순 정렬
+        for (int i=0; i<arr.length-1;i++) {		// 내림차순 정렬 선택정렬
             for(int j=i+1; j<arr.length;j++) {
                 if(arr[i]<arr[j]) { 
-                    int temp = arr[i];
+                    int tmp = arr[i];
                     arr[i] = arr[j];
-                    arr[j] = temp;
+                    arr[j] = tmp;
                 }
             }
         }
