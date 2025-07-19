@@ -13,7 +13,7 @@ public class Main {
 		int resDen = den1*den2;
 		int resNum = (num1*den2)+(num2*den1);
 		
-		for(int i=Math.max(resNum, resDen);i>1;i--) {
+		for(int i=Math.max(resNum, resDen);i>1;i--) {		//동일한 소인수가 여러개인 수의 경우를 생각해 큰수부터 나누어 준다.
 			if(resNum%i==0&&resDen%i==0) {
 				resNum = resNum/i;
 				resDen = resDen/i;
