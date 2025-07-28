@@ -8,8 +8,6 @@ public class Main {
         int count = (int) Math.sqrt(n);
         
         System.out.println(count);
-        
-        sc.close();
     }
 }
 //n 이하의 어느 수를 j라고 했을 때,
