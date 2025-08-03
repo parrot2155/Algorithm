@@ -1,18 +1,17 @@
-import java.io.BufferedReader;
-import java.io.IOException;
-import java.io.InputStreamReader;
+import java.util.Scanner;
 
 public class Main {
-    public static void main(String[] args) throws IOException {
-        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int n = sc.nextInt();
+        sc.nextLine();
+
+        Deque dq = new Deque(2000000);
         StringBuilder sb = new StringBuilder();
 
-        int n = Integer.parseInt(br.readLine());
-        Deque dq = new Deque(2000000);
-
         for (int i = 0; i < n; i++) {
-            String line = br.readLine();
-            if (line.charAt(0) == '1') { 
+            String line = sc.nextLine();
+            if (line.charAt(0) == '1') {
                 int x = Integer.parseInt(line.substring(2));
                 dq.pushFront(x);
             } else if (line.charAt(0) == '2') {
