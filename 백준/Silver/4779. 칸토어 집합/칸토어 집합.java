@@ -1,4 +1,4 @@
-//제 귀여운 재귀 함수 보실래요/?
+
 import java.util.Scanner;
 
 public class Main {
@@ -25,4 +25,5 @@ public class Main {
             System.out.println(new String(arr));
         }
     }
+
 }
