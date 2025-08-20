@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class Main {
+public class Main {	//어려움
 	static StringBuilder sb = new StringBuilder();
 
 	public static void main(String[] args) {
@@ -29,4 +29,5 @@ public class Main {
 			hanoi(n - 1, 6 - x - y, y);
 		}
 	}
+
 }
