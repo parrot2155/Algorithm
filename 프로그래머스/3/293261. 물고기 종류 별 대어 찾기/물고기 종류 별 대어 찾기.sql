@@ -1,0 +1,15 @@
+-- 코드를 작성해주세요
+
+SELECT ID,
+       (SELECT FISH_NAME 
+          FROM FISH_NAME_INFO n
+         WHERE n.FISH_TYPE = f.FISH_TYPE) AS FISH_NAME,
+       LENGTH
+FROM FISH_INFO f
+WHERE LENGTH = (
+        SELECT MAX(LENGTH)
+        FROM FISH_INFO
+        WHERE FISH_TYPE = f.FISH_TYPE
+          AND LENGTH IS NOT NULL
+      )
+ORDER BY ID;
