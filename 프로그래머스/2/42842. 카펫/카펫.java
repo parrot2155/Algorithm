@@ -12,7 +12,7 @@ class Solution {
         // 2. 세로 길이를 3부터 늘려가며 찾기
         for (int height = 3; height <= size / height; height++) {
             
-            // 3-1. 전체 넓이가 세로 길이로 나누어 떨어져야 함 (직사각형)
+            // 3-1. 전체 넓이가 세로 길이로 나누어 떨어져야 함
             if (size % height == 0) {
                 // 가로 길이 구하기
                 int width = size / height;
